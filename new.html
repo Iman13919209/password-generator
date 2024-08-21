@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <table>
+            
+                <div id="logo">
+                    <img src="assets/icons8-access-64.png" alt="">
+                    <p>password Generator</p>
+                </div>
+                <!-- <div id="details">
+                    <details>
+                        
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, molestiae!</p>
+                        <summary>why us</summary>
+                    </details>
+                </div> -->
+                <div id="signin">
+                    <img src="assets/user-interface.png" alt="" height="50vh" width="50vh">
+                    <!-- <p>Sign in</p> -->
+                </div>
+                
+            
+        </table>
+    </div>
+    <marquee behavior="" direction="" class="marque-tag"> <h2>Password Generator</h2></marquee>
+    <div class="container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required ><br><br>
+            <label for="info">Information (e.g. email, username, etc.):</label>
+            <input type="text" id="info" required><br><br>
+            <label for="length">Password Length:</label>
+            <input type="number" id="length"  min="8" max="128"><br><br>
+            <button type="button" onclick="generatePassword()">Generate Password</button>
+            <p id="password"></p>
+        </form>
+        
+        
+    </div>
+    <div class="suggestion">
+        <h2>What makes a password strong?</h2>
+        <div id="items">
+            <div id="item1">
+                <h3>LONG</h3>
+                <p>The longer a password, the more secure it is. A strong password should be at least 10 characters long.</p>
+            </div>
+            <div id="item2">
+                <h3>COMPLEX</h3>
+                <p>Strong passwords makes with combination of letters, numbers, cases, and symbols.</p>
+            </div>
+            <div id="item3">
+                <h3>UNIQUE</h3>
+                <P>A strong password should be unique to each account to reduce vulnerability in the event of a hack.</P>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> © 2024 Gen Digital Inc. All rights reserved.</p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
