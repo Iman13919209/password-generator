@@ -1,224 +1,248 @@
 body {
     font-family: "Playwrite AT", cursive;
-    /* display:block; */
     height: 100%;
     align-items: center;
     justify-content: center;
     margin: 0;
-    /* position: initial; */
     background-image: url(https://png.pngtree.com/background/20230416/original/pngtree-website-technology-line-dark-background-picture-image_2443641.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
-#nav{
-    /* border: 2px solid black;
-    height: 10vh;
-    width: 100%;
-    display: grid;
-    justify-content: center; 
-    text-align: center; */
+
+#nav {
     position: relative;
     width: 100%;
     height: 13vh;
-    background-color:cadetblue;
-    box-shadow: 0px  5px 10px rgba(0, 0, 0, 0.529);
-    /* padding: 0 4vw; */
+    background-color: cadetblue;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.529);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     text-decoration: none;
-    
 }
-#logo{
+
+#logo {
     position: absolute;
     left: 3vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
-#logo img{
+
+#logo img {
     width: 5vw;
     height: 3vw;
 }
-#logo p{
+
+#logo p {
     font-family: "Playwrite AT", cursive;
     font-size: 1.8vw;
-    color:  chocolate;
+    color: whitesmoke;
     margin-top: -5px;
     margin-top: 3vh;
     margin-left: 2vh;
 }
-#signin{
+
+#signin {
     justify-content: flex-end;
     display: grid;
     text-decoration: none;
     color: blue;
     cursor: pointer;
-
 }
-#signin img{
+
+#signin img {
     height: 5vh;
     width: 5vh;
 }
-/* #signin p{
-    font-family: "Playwrite AT", cursive;
-    font-size: 1.8vw;
-    color: brown;
-    margin-top: 5px; 
-} */
-#signin{
+
+#signin {
     display: flex;
     width: 20vw;
     padding: 5px;
     margin-right: 4vw;
     gap: 5px;
 }
-form p{
+
+form p {
     color: aliceblue;
 }
+
 .container {
-     text-align: center;
-    justify-content: center; 
+    text-align: center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     display: grid;
-    
-    
 }
-form{
+
+form {
     height: 40vh;
     width: 60vh;
-   background-color:  whitesmoke;
-    /* background-image: url(assets/good-password-3d-render-secure-data-protection.jpg); */
-    background-repeat:no-repeat ;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
     background-size: cover;
     background: var(--clr-1);
     border-radius: 0.5rem;
-  
     position: relative;
+}
 
-    
+form:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.529);
 }
-form:hover{
-    box-shadow: 0px  10px 20px rgba(0, 0, 0, 0.529);
-}
+
 label {
     display: block;
     margin-bottom: 10px;
     color: aliceblue;
 }
+
 .suggestion {
-    /* background-color: aqua; */
     position: relative;
     height: 45vh;
-    width:100% ;
+    width: 100%;
     padding-top: 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.suggestion h2{
+
+.suggestion h2 {
     color: aliceblue;
 }
 
-
-#items{
+#items {
     justify-content: space-around;
     gap: 10px;
-    /* position: inherit; */
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 5px ;
-    /* margin-inline: 60vh; */
+    padding: 0px 5px;
+}
 
-    
-    
+#item1, #item2, #item3 {
+    border: 2px solid #2d8f85;
+    height: 30vh;
+    width: 45vh;
+    padding-top: 4px;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-}
-#item1{
-    border: 2px solid black;
-    height: 30vh;
-    width: 45vh;
-    padding-top: 4px;
-    border-radius: 10%;
-    background-image: url(assets/istockphoto-1147058835-1024x1024.jpg);
-    background-repeat:no-repeat ;
-    background-size: cover;
-    
-}
-#item2{
-    border: 2px solid black;
-    height: 30vh;
-    width: 45vh;
-    padding-top: 4px;
-    border-radius: 10%;
-    background-image: url(assets/istockphoto-1398677895-1024x1024.jpg);
-    background-repeat:no-repeat ;
-    background-size: cover;
-}
-#item3{
-    border: 2px solid black;
-    height: 30vh;
-    width: 45vh;
-    padding-top: 4px;
-    border-radius: 10%;
-    background-image: url(assets/istockphoto-1257388411-1024x1024.jpg);
-    background-repeat:no-repeat ;
-    background-size: cover;
+#item3 {
     align-items: flex-end;
     position: relative;
-
+}
+#items p{
+    color: aliceblue;
+}
+#items h3{
+    color: aliceblue;
 }
 
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-  }
-  :root {
+}
+
+:root {
     --clr-1: #052b2f;
     --clr-2: #073438;
     --clr-3: #0e4b50;
     --clr-4: #2d8f85;
     --clr-5: #637c54;
-  }
-  
-  
-  form::after,form::before{
+}
+
+form::after, form::before {
     content: "";
     position: absolute;
     inset: -0.5rem;
     z-index: -1;
     background: conic-gradient(
-      from var(--gradient-angle),
-      var(--clr-3),
-      var(--clr-4),
-      var(--clr-5),
-      var(--clr-4),
-      var(--clr-3)
+        from var(--gradient-angle),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-4),
+        var(--clr-3)
     );
     border-radius: inherit;
     animation: rotation 20s linear infinite;
-  }
- 
+}
 
-  form::before{
+form::before {
     filter: blur(3.5rem);
-  }
+}
 
-
-
-
-
-.footer{
+.footer {
     text-align: center;
 }
-.footer p{
+
+.footer p {
     color: aliceblue;
 }
 
-.marque-tag{
+.marque-tag {
     color: aliceblue;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #logo img {
+        width: 7vw;
+        height: 5vw;
+    }
+
+    #logo p {
+        font-size: 3vw;
+        margin-left: 1vw;
+    }
+
+    #signin {
+        width: 30vw;
+        margin-right: 2vw;
+    }
+
+    form {
+        width: 80vw;
+        height: auto;
+        padding: 20px;
+    }
+
+    #items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #item1, #item2, #item3 {
+        width: 80vw;
+        height: 20vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo img {
+        width: 10vw;
+        height: 7vw;
+    }
+
+    #logo p {
+        font-size: 4vw;
+    }
+
+    #signin {
+        width: 40vw;
+    }
+
+    form {
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    #item1, #item2, #item3 {
+        width: 90vw;
+        height: 15vh;
+    }
 }
