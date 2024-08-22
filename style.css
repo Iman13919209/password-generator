@@ -255,6 +255,7 @@ form::before {
     background-color: #052b2f;
     color: aliceblue;
     width: 100%;
+    margin-top: 20vh;
 }
 
 .footer p {
