@@ -5,16 +5,16 @@ body {
     justify-content: center;
     margin: 0;
     background-image: url(https://png.pngtree.com/background/20230416/original/pngtree-website-technology-line-dark-background-picture-image_2443641.jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
 }
-
+.marque-tag{
+    color: aliceblue;
+}
 #nav {
     position: relative;
     width: 100%;
     height: 13vh;
-    /* background-color: cadetblue; */
-    background-color:#2d8f85;
+    background-color: #2d8f85;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.529);
     display: flex;
     align-items: center;
@@ -39,7 +39,6 @@ body {
     font-family: "Playwrite AT", cursive;
     font-size: 1.8vw;
     color: whitesmoke;
-    margin-top: -5px;
     margin-top: 3vh;
     margin-left: 2vh;
 }
@@ -134,10 +133,12 @@ label {
     align-items: flex-end;
     position: relative;
 }
-#items p{
+
+#items p {
     color: aliceblue;
 }
-#items h3{
+
+#items h3 {
     color: aliceblue;
 }
 
@@ -176,21 +177,24 @@ form::before {
     filter: blur(3.5rem);
 }
 
-/* .footer {
+/* Footer Styles */
+.footer {
     text-align: center;
-    height: 10vh;
+    padding: 20px;
+    background-color: #052b2f;
+    color: aliceblue;
     width: 100%;
+    margin-top: 20vh;
 }
 
 .footer p {
-    color: aliceblue;
-} */
-
-.marque-tag {
-    color: aliceblue;
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 /* Responsive Styles */
+
+/* For tablets and medium devices */
 @media (max-width: 768px) {
     #logo img {
         width: 7vw;
@@ -222,8 +226,14 @@ form::before {
         width: 80vw;
         height: 20vh;
     }
+
+    .footer p {
+        font-size: 1rem;
+        padding: 15px;
+    }
 }
 
+/* For mobile and small devices */
 @media (max-width: 480px) {
     #logo img {
         width: 10vw;
@@ -248,31 +258,40 @@ form::before {
         width: 90vw;
         height: 15vh;
     }
-}
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #052b2f;
-    color: aliceblue;
-    width: 100%;
-    margin-top: 20vh;
-}
 
-.footer p {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-    .footer p {
-        font-size: 1rem;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
     .footer p {
         font-size: 0.9rem;
         padding: 10px;
     }
 }
+
+/* For large desktops */
+@media (min-width: 1200px) {
+    #logo img {
+        width: 4vw;
+        height: 2.5vw;
+    }
+
+    #logo p {
+        font-size: 1.5vw;
+    }
+
+    #signin {
+        width: 15vw;
+    }
+
+    form {
+        width: 50vw;
+        height: 40vh;
+    }
+
+    #item1, #item2, #item3 {
+        width: 40vh;
+        height: 25vh;
+    }
+
+    .footer p {
+        font-size: 1.5rem;
+    }
+}
+
