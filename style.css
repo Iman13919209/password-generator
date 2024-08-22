@@ -1,7 +1,7 @@
 body {
     font-family: "Playwrite AT", cursive;
     /* display:block; */
-    height: auto;
+    height: 100%;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -91,10 +91,9 @@ form{
     height: 40vh;
     width: 60vh;
    background-color:  whitesmoke;
-    background-image: url(assets/good-password-3d-render-secure-data-protection.jpg);
+    /* background-image: url(assets/good-password-3d-render-secure-data-protection.jpg); */
     background-repeat:no-repeat ;
     background-size: cover;
-    aspect-ratio: 1 / 1.5;
     background: var(--clr-1);
     border-radius: 0.5rem;
   
@@ -130,6 +129,7 @@ label {
     gap: 10px;
     /* position: inherit; */
     display: flex;
+    flex-wrap: wrap;
     padding: 0px 5px ;
     /* margin-inline: 60vh; */
 
@@ -171,6 +171,7 @@ label {
     position: relative;
 
 }
+
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -206,14 +207,6 @@ label {
   form::before{
     filter: blur(3.5rem);
   }
-  @keyframes spin{
-    0% {
-        --gradient-angle: 0deg;
-      }
-      100% {
-        --gradient-angle: 360deg;
-      }
-  }
 
 
 
@@ -229,13 +222,3 @@ label {
 .marque-tag{
     color: aliceblue;
 }
-/* @media (max-width:40rem){
-    #items{
-        width: 50%;
-    }
-}
-@media (max-width:56rem){
-#items{
-        width: 33.333%;
-    }
-} */
